@@ -90,14 +90,11 @@
             }
 
             let numeroFaixas = Math.ceil(largura / 0.6);
-            let alturasFaixas = [1.00, 1.20, 1.50, 1.70, 2.00, 2.20, 2.50, 2.70, 3.00, 3.20, 3.30, 3.40, 3.50, 3.60, 3.70, 3.80, 3.90, 4.00, 4.10, 4.20, 4.30, 4.40, 4.50, 4.60, 4.70, 4.80, 4.90, 5.00, 5.10, 5.20, 5.30, 5.40, 5.50];
+            let alturasFaixas = [1.00, 1.20, 1.50, 1.70, 2.00, 2.20, 2.50, 2.70, 3.00, 3.20, 3.30, 3.40, 3.50, 3.60, 3.70, 3.80, 3.90, 4.00, 4.10, 4.20, 4.30, 4.40, 4.50, 4.60, 4.70, 4.80, 4.90, 5.00, 5.10, 5.20, 5.30, 5.40, 5.50, 6.00, 6.50, 7.00, 7.50, 8.00];
             let alturaFaixas = alturasFaixas.find(alt => alt >= altura + 0.1);
 
-            if (alturaFaixas > 6) {
-                numeroFaixas = Math.ceil(numeroFaixas);
-                if (numeroFaixas % 2 !== 0) {
-                    numeroFaixas += 1;
-                }
+            if (alturaFaixas >= 6) {
+                numeroFaixas = Math.ceil(numeroFaixas / 2) * 2; // Garante que seja par
             }
 
             let valorVista = numeroFaixas * alturaFaixas * precoVista;
