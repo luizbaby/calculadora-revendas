@@ -103,9 +103,11 @@
             let valorVista = numeroFaixas * alturaFaixas * precoVista;
             let valorPrazo = numeroFaixas * alturaFaixas * precoPrazo;
 
-            document.getElementById('resultado').innerHTML =
-                `Você precisará de <span style="color: white; font-weight: bold;">${numeroFaixas} faixas de ${formatNumber(alturaFaixas)}m</span>.<br>
-                 O valor total <span style="color: white; font-weight: bold;">à vista</span> é de <span style="color: white; font-weight: bold;">R$ ${formatNumber(valorVista)}</span> ou <span style="color: white; font-weight: bold;">a prazo</span> no valor de <span style="color: white; font-weight: bold;">R$ ${formatNumber(valorPrazo)}</span>.`;
+document.getElementById('resultado').innerHTML =
+    `Você precisará de <span style="color: white; font-weight: bold;">${numeroFaixas} faixas de ${formatNumber(alturaFaixas)}m</span>.<br>
+     O valor total <span style="color: white; font-weight: bold;">à vista</span> é de <span style="color: white; font-weight: bold;">R$ ${formatNumber(valorVista)}</span> ou <span style="color: white; font-weight: bold;">a prazo</span> no valor de <span style="color: white; font-weight: bold;">R$ ${formatNumber(valorPrazo)}</span>.<br><br>
+     <span style="color: #ffcc00; font-weight: bold;">ATENÇÃO!</span> Os preços serão reajustados em pedidos pagos a partir de 13/04/26.<br>
+     Consulte nossos consultores para maiores informações.`;
         }
     </script>
 </body>
