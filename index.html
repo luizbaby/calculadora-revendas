@@ -73,8 +73,8 @@
 
     <script>
         // Definição de preços (fácil de atualizar!)
-        const precoVista = 41.90;
-        const precoPrazo = 47.90;
+        const precoVista = 44.90;
+        const precoPrazo = 51.90;
 
         function formatNumber(number) {
             return number.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).replace('.', ',');
@@ -105,9 +105,7 @@
 
 document.getElementById('resultado').innerHTML =
     `Você precisará de <span style="color: white; font-weight: bold;">${numeroFaixas} faixas de ${formatNumber(alturaFaixas)}m</span>.<br>
-     O valor total <span style="color: white; font-weight: bold;">à vista</span> é de <span style="color: white; font-weight: bold;">R$ ${formatNumber(valorVista)}</span> ou <span style="color: white; font-weight: bold;">a prazo</span> no valor de <span style="color: white; font-weight: bold;">R$ ${formatNumber(valorPrazo)}</span>.<br><br>
-     <span style="color: #ffcc00; font-weight: bold;">ATENÇÃO!</span> Os preços serão reajustados em pedidos pagos a partir de 13/04/26.<br>
-     Consulte nossos consultores para maiores informações.`;
+     O valor total <span style="color: white; font-weight: bold;">à vista</span> é de <span style="color: white; font-weight: bold;">R$ ${formatNumber(valorVista)}</span> ou <span style="color: white; font-weight: bold;">a prazo</span> no valor de <span style="color: white; font-weight: bold;">R$ ${formatNumber(valorPrazo)}</span>.<br><br>`;
         }
     </script>
 </body>
